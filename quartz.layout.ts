@@ -25,8 +25,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        { Component: Component.Darkmode() },
-        { Component: Component.DesktopOnly(Component.ReaderMode()) },
+        { Component: Component.Darkmode() }
+        // { Component: Component.DesktopOnly(Component.ReaderMode()) },
       ],
     }),
     Component.Explorer(),
