@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Spencer Carlson</title>
+      <link>https://spencercarlson.dev</link>
+      <description>Last 10 notes on Spencer Carlson</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Projects</title>
+    <link>https://spencercarlson.dev/projects</link>
+    <guid>https://spencercarlson.dev/projects</guid>
+    <description><![CDATA[ These are some of my projects! Example Project #1 Lorem ipsum dolor sit amet Example Project #2 Lorem ipsum dolor sit amet Example Project #3 Lorem ipsum dolor sit amet . ]]></description>
+    <pubDate>Thu, 07 Aug 2025 22:36:27 GMT</pubDate>
+  </item><item>
+    <title>Welcome</title>
+    <link>https://spencercarlson.dev/</link>
+    <guid>https://spencercarlson.dev/</guid>
+    <description><![CDATA[ Hello!. ]]></description>
+    <pubDate>Wed, 23 Aug 2023 19:09:04 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
