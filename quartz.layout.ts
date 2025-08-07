@@ -23,12 +23,12 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Darkmode() }
-        // { Component: Component.DesktopOnly(Component.ReaderMode()) },
-      ],
-    }),
+    // Component.Flex({
+    //   components: [
+    //     // { Component: Component.Darkmode() }
+    //     // { Component: Component.DesktopOnly(Component.ReaderMode()) },
+    //   ],
+    // }),
     Component.Explorer(),
   ],
   right: [
@@ -50,7 +50,7 @@ export const defaultListPageLayout: PageLayout = {
         //   Component: Component.Search(),
         //   grow: true,
         // },
-        { Component: Component.Darkmode() },
+        // { Component: Component.Darkmode() },
       ],
     }),
     Component.Explorer(),
