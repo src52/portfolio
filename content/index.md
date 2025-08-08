@@ -1,5 +1,6 @@
 ---
 title: Welcome
 ---
+Hello there!
 
-Hello!
+[Projects here](projects)
