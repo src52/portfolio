@@ -21,28 +21,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.Flex({
-  components: [
-    {
-      Component: Component.PageTitle(),
-      grow: true, // Search will grow to fill available space
-      align: "end"
-    },
-    { Component: Component.Darkmode(), align: "end" }, // Darkmode keeps its natural size
-    { Component: Component.Explorer(), align: "end" },
-  ],
-  direction: "column",
-  gap: "1rem",
-})
-    // Component.PageTitle(),
-    // Component.Darkmode(),
-    // // Component.Flex({
-    // //   components: [
-    // //     // { Component: Component.Darkmode() }
-    // //     // { Component: Component.DesktopOnly(Component.ReaderMode()) },
-    // //   ],
-    // // }),
-    // Component.Explorer(),
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Darkmode()),
+    // Component.Flex({
+    //   components: [
+    //     // { Component: Component.Darkmode() }
+    //     // { Component: Component.DesktopOnly(Component.ReaderMode()) },
+    //   ],
+    // }),
+    Component.Explorer(),
   ],
   right: [
     // Component.Graph(),
@@ -55,18 +42,12 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-
     Component.PageTitle(),
-    Component.Darkmode(),
-    Component.Flex({
-      components: [
-        // {
-        //   Component: Component.Search(),
-        //   grow: true,
-        // },
-        // { Component: Component.Darkmode() },
-      ],
-    }),
+    // Component.MobileOnly(Component.Spacer()),
+    // Component.Flex({
+    //   components: [
+    //   ],
+    // }),
     Component.Explorer(),
   ],
   right: [],
