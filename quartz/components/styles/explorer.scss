@@ -27,10 +27,10 @@
 }
 
 .explorer {
+  z-index: 0;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-
   min-height: 1.2rem;
   flex: 0 1 auto;
   &.collapsed {

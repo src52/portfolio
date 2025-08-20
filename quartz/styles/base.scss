@@ -425,6 +425,10 @@ h6 {
   margin-bottom: 1rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 figure[data-rehype-pretty-code-figure] {
   margin: 0;
   position: relative;
@@ -517,7 +521,8 @@ code {
 tbody,
 li,
 p {
-  line-height: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 .table-container {
