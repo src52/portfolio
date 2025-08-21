@@ -10,9 +10,9 @@ Outside the digital realm, I enjoy:
  - Tennis
  - Cooking
  - Reading (_Oathbringer_ by Brandon Sanderson)
- - Hiking
  - Music, concerts, record collecting
-
+ - Hiking
+ 
 ## Projects
 
 Here are some projects I've worked on!
