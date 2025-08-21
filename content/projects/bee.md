@@ -2,7 +2,6 @@
 title: Spelling Bee
 ---
 
-# Spelling Bee - Jetpack Compose
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Wrote AWS Lambda functions to validate words against a dictionary
 %%  > [!info] Images %%
