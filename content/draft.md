@@ -1,6 +1,7 @@
 ---
-navTitle: Yet Another Task Management App, Android
-title: Tasks
+navTitle: Draft Title
+title: Draft
+draft: true
 ---
 
 > *"A rite of passage for programmers is to build a to-do list app, then forget to finish it."*
