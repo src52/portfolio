@@ -3,13 +3,13 @@ title: Welcome!
 ---
 Hey, thanks for stopping by!
 
-I am a software developer pursuing my Master's in Computer Science at Cal State Long Beach. I have always had a passion for computers and programming ever since I was a kid. 
+I am a software developer pursuing my Master's in Computer Science at Cal State Long Beach. I have had a passion for computers and programming since I was a kid. 
 
 Outside the digital realm, I enjoy:
 
  - Tennis
  - Cooking
- - Reading (current book: _Oathbringer_ by Brandon Sanderson)
+ - Reading (_Oathbringer_ by Brandon Sanderson)
  - Hiking
  - Music, concerts, record collecting
 
@@ -69,6 +69,8 @@ Here are some projects I've worked on!
     inset: 0 auto auto 0;
     right: 0;
     padding: 8px 10px;
+    font-size: 1.35rem;
+    text-align: center;
     font-weight: 800;
     line-height: 1;
     color: #fff;
@@ -80,7 +82,7 @@ Here are some projects I've worked on!
 </style>
 <div class="obsidian-tile-grid">
 <a class="obsidian-tile" href="projects/tasks.md" aria-label="View details about the Task Management app">
-    <img src="./images/dynamictheme.jpg" alt="Screenshot of the task management app">
+    <img src="./images/newtask.jpg" alt="Screenshot of the task management app">
     <div class="obsidian-tile-title">Task Management Android App</div>
   </a>
   <a class="obsidian-tile" href="projects/bee.md" aria-label="View details about the Spelling Bee app">
