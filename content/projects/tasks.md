@@ -2,7 +2,11 @@
 title: Tasks
 ---
 
-# Task Management Android App - Jetpack Compose
+# Task Management App #5823, Android
+
+> “The true rite of passage for a programmer is building a to-do list app, then forgetting to finish it.”
+-- Sun Tzu
+
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Tasks are grouped in categories, or favorited to appear in starred area of tab bar
 - Task and app state is saved to local SQLite DB using [Room](https://developer.android.com/training/data-storage/room)
