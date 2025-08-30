@@ -31,8 +31,8 @@ title: Spelling Bee
  </style>
  <div class="image-gallery">
 <figure>
-<a href="images/Bee.png" target="_blank">
-<img src="images/Bee.png" alt="The spelling bee game">
+<a href="images/bee.jpg" target="_blank" rel="noopener">
+  <img src="images/thumbs/bee-thumb.jpg" alt="The spelling bee game" width="480" loading="lazy" decoding="async">
 </a>
 <figcaption>A user spelling the word 'pebble' from the available letters.</figcaption>
 </figure>
