@@ -29,13 +29,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates && fileData.slug?.startsWith("blog/")) {
-        segments.push(
-          <em>
-            <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
-          </em>
-        )
-      }
+      // if (fileData.dates && fileData.slug?.startsWith("blog/")) {
+      //   segments.push(
+      //     <em>
+      //       <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
+      //     </em>
+      //   )
+      // }
       
       // Display reading time if enabled
       if (options.showReadingTime) {

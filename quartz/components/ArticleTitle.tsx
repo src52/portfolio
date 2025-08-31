@@ -1,13 +1,25 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { Date, getDate } from "./Date"
 
-const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+const ArticleTitle: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
   const title = fileData.frontmatter?.navTitle ?? fileData.frontmatter?.title
-  if (title) {
-    return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
-  } else {
-    return null
-  }
+
+  if (!title) return null
+
+  const isBlogPage = fileData.slug?.startsWith("blog/")
+  const dateEl =
+    isBlogPage && fileData.dates ? (
+      <em style="font-weight:normal;"> – <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
+</em>
+    ) : null
+
+  return (
+    <h1 class={classNames(displayClass, "article-title")}>
+      {title}
+      {dateEl}
+    </h1>
+  )
 }
 
 ArticleTitle.css = `
