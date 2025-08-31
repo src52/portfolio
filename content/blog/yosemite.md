@@ -1,6 +1,7 @@
 ---
 title: Yosemite
 draft: false
+date: 2025-08-30
 tags:
   - hiking
 ---
