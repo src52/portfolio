@@ -7,12 +7,15 @@ const ArticleTitle: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCo
 
   if (!title) return null
 
-
-  const isBlogPost = fileData.slug?.startsWith("blog/") && fileData.slug !== "blog/"
+  const slug = fileData.slug ?? ""
+  const isBlogPost =
+    slug.startsWith("blog/") &&
+    slug !== "blog/" &&
+    slug !== "blog/index"
   const dateEl =
     isBlogPost && fileData.dates ? (
-      <em style="font-weight:normal;"> –- <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
-</em>
+      <em style="font-weight:normal;;"> -  <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
+      </em>
     ) : null
 
   return (
