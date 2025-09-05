@@ -82,11 +82,11 @@ Here are some projects I've worked on!
 </style>
 <div class="obsidian-tile-grid">
 <a class="obsidian-tile" href="projects/tasks.md" aria-label="View details about the Task Management app">
-    <img src="./images/newtask.jpg" alt="Screenshot of the task management app">
+    <img src="./images/thumbs/newtask-thumb.jpg" alt="Screenshot of the task management app">
     <div class="obsidian-tile-title">Task Management Android App</div>
   </a>
   <a class="obsidian-tile" href="projects/bee.md" aria-label="View details about the Spelling Bee app">
-    <img src="./images/Bee.png" alt="A screenshot of the Spelling Bee game">
+    <img src="./images/thumbs/bee-thumb.jpg" alt="A screenshot of the Spelling Bee game">
     <div class="obsidian-tile-title">Spelling Bee</div>
   </a>
 </div>
