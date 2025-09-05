@@ -1,6 +1,20 @@
 ---
-title: Projects
+title: Welcome!
 ---
+Hey, thanks for stopping by!
+
+I am a software developer pursuing my Master's in Computer Science at Cal State Long Beach. I have had a passion for computers and programming since I was a kid. 
+
+Outside the digital realm, I enjoy:
+
+ - Tennis
+ - Cooking
+ - Reading (_Oathbringer_ by Brandon Sanderson)
+ - Music, concerts, record collecting
+ - Hiking
+ 
+## Projects
+
 Here are some projects I've worked on!
 
 <style>
@@ -68,11 +82,11 @@ Here are some projects I've worked on!
 </style>
 <div class="obsidian-tile-grid">
 <a class="obsidian-tile" href="projects/tasks.md" aria-label="View details about the Task Management app">
-    <img src="images/thumbs/newtask-thumb.jpg" alt="Screenshot of the task management app">
+    <img src="./images/thumbs/newtask-thumb.jpg" alt="Screenshot of the task management app">
     <div class="obsidian-tile-title">Task Management Android App</div>
   </a>
   <a class="obsidian-tile" href="projects/bee.md" aria-label="View details about the Spelling Bee app">
-    <img src="images/thumbs/bee-thumb.jpg" alt="A screenshot of the Spelling Bee game">
+    <img src="./images/thumbs/bee-thumb.jpg" alt="A screenshot of the Spelling Bee game">
     <div class="obsidian-tile-title">Spelling Bee</div>
   </a>
 </div>
