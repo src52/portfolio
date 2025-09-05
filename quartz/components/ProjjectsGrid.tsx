@@ -1,7 +1,6 @@
 // quartz/components/ProjectsGrid.tsx
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { QuartzPluginData } from "../plugins/vfile"
-import { serializeOuter } from "parse5"  // adjust path to your repo
 
 type Options = {
   folderSlug?: string // slug prefix to include, e.g. "projects/"

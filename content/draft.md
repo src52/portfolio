@@ -1,6 +1,7 @@
 ---
-navTitle: Yet Another Task Management App, Android
-title: Tasks
+navTitle: Draft Title
+title: Draft
+draft: true
 ---
 
 > *"A rite of passage for programmers is to build a to-do list app, then forget to finish it."*
@@ -40,25 +41,25 @@ title: Tasks
  <div class="image-gallery">
    <figure>
      <a href="images/task2.jpg" target="_blank">
-       <img src="images/thumbs/task2-thumb.jpg" alt="Task 2">
+       <img src="images/task2.jpg" alt="Task 2">
      </a>
      <figcaption>An example task displayed in a list</figcaption>
    </figure>
    <figure>
      <a href="images/newtask.jpg" target="_blank">
-       <img src="images/thumbs/newtask-thumb.jpg" alt="New task">
+       <img src="images/newtask.jpg" alt="New task">
      </a>
      <figcaption>A bottom sheet dialog to create a new task</figcaption>
    </figure>
   <figure>
      <a href="images/task3.jpg" target="_blank">
-       <img src="images/thumbs/task3-thumb.jpg" alt="Task 3">
+       <img src="images/task3.jpg" alt="Task 3">
      </a>
      <figcaption>Options to modify or remove a task category</figcaption>
    </figure>
    <figure>
      <a href="images/dynamictheme.jpg" target="_blank">
-       <img src="images/thumbs/dynamictheme-thumb.jpg" alt="Task 1">
+       <img src="images/dynamictheme.jpg" alt="Task 1">
      </a>
      <figcaption>Dynamic theme depending on user's system preferences</figcaption>
    </figure>
