@@ -7,11 +7,13 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 - Reverse-engineered the networking protocol, documenting 60 different packets
 - Built a custom server from scratch using [Netty](https://netty.io/) to accept these packets, restoring original online functionality
 
-I began this project because of all the fun I had as a teenager playing an old Java-browser game called *Arcanists* (Back when Java applets could load in browsers!)
+This project was born from all the fun I had as a teenager playing an old Java-browser game called *Arcanists* (Back when Java applets could load in browsers!) Unfortunately, the game went permanently offline in 2018. I always had a soft spot for it, so I decided to try and bring it back from the dead.
 
-Unfortunately, the game went permanently offline in 2018, but I always had a soft spot for it, so I decided to bring it back from the dead. *Arcanists* was a *tactical-artillery* style game where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
+*Arcanists* was a *tactical-artillery* style game where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
 
-When I started this project in October 2024, I didn't expect much to come of it. It all started with a single Java executable, a heavily obfuscated .jar file of the *Arcanists* client shortly before the game went offline.
+When I began this project in October 2024, I didn't expect much to come of it. It all started with a single Java executable, a heavily obfuscated .jar file of the *Arcanists* client shortly before the game went offline. Looking at it from the beginning felt pretty daunting: over 350 classes, the names of all variables and methods removed, static methods and variables randomly shuffled around to different places. 
+
+It was a labyrinth. But I was hopeful: since Java bytecode preserves class structure and type information, it decompiles back into very readable source.
 
 Here's a glimpse into the original code:
 
@@ -24,7 +26,7 @@ Here's a glimpse into the original code:
 
 I was a bit discouraged to see that all Strings and Integers were somehow obfuscated, plus lots of annoyances like unnecessary "dummy" parameters, opaque predicates, and other control flow modifications. Fortunately, after a bit of research I discovered the exact company and product that was used to obfuscate the code! It turned out to be the work of [Zelix KlassMaster](https://www.zelix.com/klassmaster/features.html), an old obfuscation product from the early 2000s!
 
-A couple of searches later led me to de-obfuscation programs targeted specifically to remove Zelix-KlassMaster's String and Integer encryption, and suddenly, the project seemed much more reasonable!
+A couple of searches later led me to de-obfuscation programs targeted specifically to remove Zelix-KlassMaster's String and Integer encryption. Suddenly, the project seemed much more reasonable!
 
 The process of refactoring the codebase was pretty time-consuming, but I tried to approach it using a few strategies:
 
@@ -36,22 +38,27 @@ The process of refactoring the codebase was pretty time-consuming, but I tried t
 
 Following these few techniques proved to be a very efficient way to refactor, and after a month or two I felt comfortable starting a server implementation. At the beginning, it was mostly trial-and-error, but eventually, I was able to make a simple connection!
 
-<figure style="text-align:center; margin: 1rem 2rem;">
+<figure class="media" style="text-align:center; margin: 1rem 2rem;">
   <video
     class="video"
     controls
     preload="metadata"
     poster="../images/arc/poster.png"
-    width="635" height="478"
+    playsinline
+    aria-describedby="vid1-caption"
+    style="display:block; max-width:100%; height:auto; margin-inline:auto;"
   >
-    <!-- MP4 is fine; add WebM too if you have it -->
-    <source src="../images/arc/video.mp4" type="video/mp4">
-    <a href="../images/arc/video.mp4">Here's a video of the first successful connection!</a>.
+    <source src="../images/arc/video.mp4" type="video/mp4" />
+    <a href="../images/arc/video.mp4">Here's a video of the first successful connection!</a>
   </video>
-  <figcaption><em>A video of the first successful connection!</em></figcaption>
+
+  <figcaption>
+    <em>A video of the first successful connection!</em>
+  </figcaption>
 </figure>
 
-After I had a barebones server that could actually connect to clients, everything else started to fall into place. I decided to use MySQL to persist account data and other player state like leaderboard rankings, spell loadouts.
+
+After I had a barebones server that could actually connect to clients, everything else started to fall into place. I decided to use MySQL to persist account data and other player state like leaderboard rankings, chosen spells, and friends lists.
 
 Here's a graph showing the repository's commits over time.
 
@@ -94,31 +101,31 @@ The server was meant to take the match state, and create its own instance of the
 <a href="../images/arc/img_7.png" target="_blank" rel="noopener">
   <img src="../images/arc/img_7.png" alt="" loading="lazy" decoding="async">
 </a>
-<figcaption>An team-based match taking place between four players.</figcaption>
+<figcaption>A team-based match taking place between four players.</figcaption>
 </figure>
 <figure>
 <a href="../images/arc/img_7.png" target="_blank" rel="noopener">
   <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
 </a>
-<figcaption>An online match taking place between two clients.</figcaption>
+<figcaption>A match taking place between two clients.</figcaption>
 </figure>
 <figure>
 <a href="../images/arc/img_2.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_2.png" alt="" width="480" loading="lazy" decoding="async">
+  <img src="../images/arc/img_2.png" alt="" loading="lazy" decoding="async">
 </a>
 <figcaption>A player casts the fireball spell.</figcaption>
 </figure>
 
 <figure>
 <a href="../images/arc/img_1.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_1.png" alt="" width="480" loading="lazy" decoding="async">
+  <img src="../images/arc/img_1.png" alt="" loading="lazy" decoding="async">
 </a>
 <figcaption>A player casts the water ball spell.</figcaption>
 </figure>
 
 <figure>
-<a href="images/arc/img_4.png" target="_blank" rel="noopener">
-  <img src="images/arc/img_4.png" alt="" width="480" loading="lazy" decoding="async">
+<a href="../images/arc/img_4.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_4.png" alt="" loading="lazy" decoding="async">
 </a>
 <figcaption>Designed a match-making algorithm to connect players together given multiple constraints.</figcaption>
 </figure>
