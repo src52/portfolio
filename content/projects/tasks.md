@@ -1,14 +1,8 @@
 ---
-navTitle: Yet Another Task Management App, Android
-title: Tasks
+navTitle: Task Management, Android
+title: Task Manager Android App
+image: ../images/thumbs/newtask-thumb.jpg
 ---
-
-> *"A rite of passage for programmers is to build a to-do list app, then forget to finish it."*
-> 
-> -- Sun Tzu
-
-<hr>
-
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Tasks are grouped in categories, or favorited to appear in starred area of tab bar
 - Task and app state is saved to local SQLite DB using [Room](https://developer.android.com/training/data-storage/room)

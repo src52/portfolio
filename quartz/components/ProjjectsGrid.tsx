@@ -12,7 +12,7 @@ const imageKeys = ["image", "cover", "banner", "thumbnail"] as const
 export default ((opts: Options = {}): QuartzComponent => {
   const {
     folderSlug = "projects/",
-    defaultImage = "/static/placeholder.png",
+    defaultImage = "images/bee.jpg",
   } = opts
 
   function ProjectsGrid({ fileData, allPages }: QuartzComponentProps) {

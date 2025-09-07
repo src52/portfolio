@@ -1,5 +1,6 @@
 ---
 title: Spelling Bee
+image: ../images/thumbs/bee-thumb.jpg
 ---
 
 - Built using Jetpack Compose, following Material Design 3 patterns
