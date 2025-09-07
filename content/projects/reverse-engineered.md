@@ -9,7 +9,7 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 
 I embarked on this project because of all the fun I had playing an old Java-browser game called *Arcanists* as a young teen (Back when Java applets could load in browsers!)
 
-Arcanists was a *tactical-artillery* style game, where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
+*Arcanists* was a *tactical-artillery* style game, where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
 
 When I started this project in October 2024, I didn't expect much to come of it. It all started with a single Java executable, a heavily obfuscated .jar file of the *Arcanists* client shortly before the game went offline.
 
