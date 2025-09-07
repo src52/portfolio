@@ -22,9 +22,9 @@ Here's a glimpse into the original code:
   <figcaption><em>An example of the client's obfuscation.</em></figcaption>
 </figure>
 
-I was a bit discouraged to see that all Strings, ints and longs were somehow obfuscated, plus lots of annoyances like unnecessary "dummy" parameters, opaque predicates, and other control flow modifications. Fortunately, after a bit of research I discovered the exact company and product that was used to obfuscate the code! It turned out to be the work of [Zelix KlassMaster](https://www.zelix.com/klassmaster/features.html), an old obfuscation product from the early 2000s!
+I was a bit discouraged to see that all Strings and Integers were somehow obfuscated, plus lots of annoyances like unnecessary "dummy" parameters, opaque predicates, and other control flow modifications. Fortunately, after a bit of research I discovered the exact company and product that was used to obfuscate the code! It turned out to be the work of [Zelix KlassMaster](https://www.zelix.com/klassmaster/features.html), an old obfuscation product from the early 2000s!
 
-A couple of searches later led me to de-obfuscation programs targeted specifically for Zelix-KlassMaster, and suddenly, the project seemed much more reasonable!
+A couple of searches later led me to de-obfuscation programs targeted specifically to remove Zelix-KlassMaster's String and Integer encryption, and suddenly, the project seemed much more reasonable!
 
 The process of refactoring the codebase was pretty time-consuming, but I tried to approach it using a few strategies:
 
@@ -53,7 +53,7 @@ Following these few techniques proved to be a very efficient way to refactor, an
 
 After I had a barebones server that could actually connect to clients, everything else started to fall into place. I decided to use MySQL to persist account data and other player state like leaderboard rankings, spell loadouts.
 
-Here's a graph showing the repositories commits over time.
+Here's a graph showing the repository's commits over time.
 
 <figure style="text-align:center; margin: 1rem 2rem;">
   <a href="../images/arc/commits.jpg" target="_blank">
