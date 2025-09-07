@@ -21,6 +21,7 @@ const css = `
   --tile-gap: 12px;
   --tile-radius: 12px;
   display: grid;
+  margin-top: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--tile-size)), 1fr));
   gap: var(--tile-gap);
 }
