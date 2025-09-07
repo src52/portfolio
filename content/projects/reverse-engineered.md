@@ -104,9 +104,16 @@ The server was meant to take the match state, and create its own instance of the
 </figure>
 
 <figure>
+<a href="../images/arc/img_1.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_1.png" alt="" width="480" loading="lazy" decoding="async">
+</a>
+<figcaption>A player casts the water ball spell.</figcaption>
+</figure>
+
+<figure>
 <a href="images/arc/img_4.png" target="_blank" rel="noopener">
   <img src="images/arc/img_4.png" alt="" width="480" loading="lazy" decoding="async">
 </a>
-<figcaption>Designed an algorithm to match players together given chosen constraints.</figcaption>
+<figcaption>Designed a match-making algorithm to connect players together given chosen constraints.</figcaption>
 </figure>
 </div>
