@@ -114,6 +114,6 @@ The server was meant to take the match state, and create its own instance of the
 <a href="images/arc/img_4.png" target="_blank" rel="noopener">
   <img src="images/arc/img_4.png" alt="" width="480" loading="lazy" decoding="async">
 </a>
-<figcaption>Designed a match-making algorithm to connect players together given chosen constraints.</figcaption>
+<figcaption>Designed a match-making algorithm to connect players together given multiple constraints.</figcaption>
 </figure>
 </div>
