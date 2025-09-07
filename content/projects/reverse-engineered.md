@@ -7,9 +7,9 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 - Reverse-engineered the networking protocol, documenting 60 different packets
 - Built a custom server from scratch using [Netty](https://netty.io/) to accept these packets, restoring original online functionality
 
-I embarked on this project because of all the fun I had playing an old Java-browser game called *Arcanists* as a young teen (Back when Java applets could load in browsers!)
+I began this project because of all the fun I had as a teenager playing an old Java-browser game called *Arcanists* (Back when Java applets could load in browsers!)
 
-*Arcanists* was a *tactical-artillery* style game, where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
+Unfortunately, the game went permanently offline in 2018, but I always had a soft spot for it, so I decided to bring it back from the dead. *Arcanists* was a *tactical-artillery* style game where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
 
 When I started this project in October 2024, I didn't expect much to come of it. It all started with a single Java executable, a heavily obfuscated .jar file of the *Arcanists* client shortly before the game went offline.
 
