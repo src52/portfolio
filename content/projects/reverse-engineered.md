@@ -91,14 +91,20 @@ The server was meant to take the match state, and create its own instance of the
  </style>
  <div class="image-gallery">
 <figure>
-<a href="images/arc/img.png" target="_blank" rel="noopener">
-  <img src="images/arc/img.png" alt="" width="480" loading="lazy" decoding="async">
+<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_7.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>An team-based match taking place between four players.</figcaption>
+</figure>
+<figure>
+<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
 </a>
 <figcaption>An online match taking place between two clients.</figcaption>
 </figure>
 <figure>
-<a href="images/arc/img_2.png" target="_blank" rel="noopener">
-  <img src="images/arc/img_2.png" alt="" width="480" loading="lazy" decoding="async">
+<a href="../images/arc/img_2.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_2.png" alt="" width="480" loading="lazy" decoding="async">
 </a>
 <figcaption>A player casts the fireball spell.</figcaption>
 </figure>
