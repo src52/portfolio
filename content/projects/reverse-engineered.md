@@ -71,7 +71,7 @@ This project was born from all the fun I had as a teenager playing an old Java-b
 
 When I began this project in October 2024, I didn't expect much to come of it. It all started with a single Java executable: a heavily obfuscated .jar file of the *Arcanists* client shortly before the game went offline. Looking at it from the beginning felt pretty daunting: over 350 classes, the names of all variables and methods removed, static methods and variables randomly shuffled around to different places. 
 
-It was a labyrinth. But I was hopeful: since Java bytecode preserves class structure and type information, it decompiles back into very readable source, compared to other languages where the best you'd get is machine code.
+It was a labyrinth. But I was hopeful: since Java bytecode preserves class structure and type information, it decompiles back into very readable source. Compared to other languages where the best you'd get is assembly, this was a fantastic starting point.
 
 Here's a glimpse into the original decompiled code:
 
