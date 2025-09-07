@@ -7,6 +7,64 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 - Reverse-engineered the networking protocol, documenting 60 different packets
 - Built a custom server from scratch using [Netty](https://netty.io/) to accept these packets, restoring original online functionality
 
+<style>
+ .image-gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+   gap: 20px;
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+ .image-gallery figure { margin: 0; }
+ .image-gallery img {
+   width: 100%;
+   height: auto;
+   border-radius: 6px;
+   display: block;
+ }
+ .image-gallery figcaption {
+   font-size: 0.9em;
+   font-style: italic;
+   text-align: center;
+   margin-top: 4px;
+   color: #999;
+ }
+ </style>
+ <div class="image-gallery">
+<figure>
+<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_7.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>A team-based match taking place between four players.</figcaption>
+</figure>
+<figure>
+<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>A match taking place between two clients.</figcaption>
+</figure>
+<figure>
+<a href="../images/arc/img_2.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_2.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>A player casts the fireball spell.</figcaption>
+</figure>
+
+<figure>
+<a href="../images/arc/img_1.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_1.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>A player casts the water ball spell.</figcaption>
+</figure>
+
+<figure>
+<a href="../images/arc/img_4.png" target="_blank" rel="noopener">
+  <img src="../images/arc/img_4.png" alt="" loading="lazy" decoding="async">
+</a>
+<figcaption>Designed a match-making algorithm to connect players together given multiple constraints.</figcaption>
+</figure>
+</div>
+
 This project was born from all the fun I had as a teenager playing an old Java-browser game called *Arcanists* (Back when Java applets could load in browsers!) Unfortunately, the game went permanently offline in 2018. I always had a soft spot for it, so I decided to try and bring it back from the dead.
 
 *Arcanists* was a *tactical-artillery* style game where players control a wizard. They choose a set of spells, then try to defeat their opponents in an arena! If you ever played the game [Worms](https://en.wikipedia.org/wiki/Worms_(1995_video_game)) from the mid-90s, this was basically a clone of it, but with wizards and magic instead!     
@@ -71,62 +129,4 @@ Here's a graph showing the repository's commits over time.
 
 The most interesting aspect of this codebase was the way the game handles validation of a player's actions in an online match. At any given time, the client maintains a rolling checksum value, which is calculated whenever any game state changes. Periodically, this checksum is sent to the server. Initially, I wasn't sure why the server would need the checksum, but I after some thought, it made sense. 
 
-The server was meant to take the match state, and create its own instance of the match. In a way, it's playing its own copy of the game in a secure, server-side environment. For example, if a player moves to the right, the server receives that command to move, executes it inside its copy of the match, then receives an expected checksum at the end. The clients send their "expected checksum" values to the server so the server can verify if everyone's in sync! Since the server is "playing the game" along with the clients, it serves as the source of truth if any of the clients deviate from the expected state.       
-
-<style>
- .image-gallery {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-   gap: 20px;
-   max-width: 1000px;
-   margin: 0 auto;
- }
- .image-gallery figure { margin: 0; }
- .image-gallery img {
-   width: 100%;
-   height: auto;
-   border-radius: 6px;
-   display: block;
- }
- .image-gallery figcaption {
-   font-size: 0.9em;
-   font-style: italic;
-   text-align: center;
-   margin-top: 4px;
-   color: #999;
- }
- </style>
- <div class="image-gallery">
-<figure>
-<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_7.png" alt="" loading="lazy" decoding="async">
-</a>
-<figcaption>A team-based match taking place between four players.</figcaption>
-</figure>
-<figure>
-<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
-</a>
-<figcaption>A match taking place between two clients.</figcaption>
-</figure>
-<figure>
-<a href="../images/arc/img_2.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_2.png" alt="" loading="lazy" decoding="async">
-</a>
-<figcaption>A player casts the fireball spell.</figcaption>
-</figure>
-
-<figure>
-<a href="../images/arc/img_1.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_1.png" alt="" loading="lazy" decoding="async">
-</a>
-<figcaption>A player casts the water ball spell.</figcaption>
-</figure>
-
-<figure>
-<a href="../images/arc/img_4.png" target="_blank" rel="noopener">
-  <img src="../images/arc/img_4.png" alt="" loading="lazy" decoding="async">
-</a>
-<figcaption>Designed a match-making algorithm to connect players together given multiple constraints.</figcaption>
-</figure>
-</div>
+The server was meant to take the match state, and create its own instance of the match. In a way, it's playing its own copy of the game in a secure, server-side environment. For example, if a player moves to the right, the server receives that command to move, executes it inside its copy of the match, then receives an expected checksum at the end. The clients send their "expected checksum" values to the server so the server can verify if everyone's in sync! Since the server is "playing the game" along with the clients, it serves as the source of truth if any of the clients deviate from the expected state.
