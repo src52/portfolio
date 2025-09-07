@@ -58,7 +58,7 @@ Following these few techniques proved to be a very efficient way to refactor, an
 </figure>
 
 
-After I had a barebones server that could actually connect to clients, everything else started to fall into place. I decided to use MySQL to persist account data and other player state like leaderboard rankings, chosen spells, and friends lists.
+After I had a barebones server that could actually connect to clients, everything else started to fall into place, and I got to work on implementing all the packets the client expected from the server. I decided to use MySQL to persist player state like in-game achievements, leaderboard rankings, chosen spells, and friends lists.
 
 Here's a graph showing the repository's commits over time.
 
