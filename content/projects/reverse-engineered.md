@@ -22,7 +22,7 @@ Here's a glimpse into the original code:
   <figcaption><em>An example of the client's obfuscation.</em></figcaption>
 </figure>
 
-I was a bit discouraged to see that all Strings, ints and longs were somehow obfuscated, plus lots of annoyances like unnecessary "dummy" parameters, and other control flow modifications.  Fortunately, after a bit of research I discovered the exact company and product that was used to obfuscate the code! It turned out to be the work of [Zelix KlassMaster](https://www.zelix.com/klassmaster/features.html), an old obfuscation product from the early 2000s!
+I was a bit discouraged to see that all Strings, ints and longs were somehow obfuscated, plus lots of annoyances like unnecessary "dummy" parameters, opaque predicates, and other control flow modifications. Fortunately, after a bit of research I discovered the exact company and product that was used to obfuscate the code! It turned out to be the work of [Zelix KlassMaster](https://www.zelix.com/klassmaster/features.html), an old obfuscation product from the early 2000s!
 
 A couple of searches later led me to de-obfuscation programs targeted specifically for Zelix-KlassMaster, and suddenly, the project seemed much more reasonable!
 
