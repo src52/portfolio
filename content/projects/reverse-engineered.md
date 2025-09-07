@@ -38,7 +38,7 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 <figcaption>A team-based match taking place between four players.</figcaption>
 </figure>
 <figure>
-<a href="../images/arc/img_7.png" target="_blank" rel="noopener">
+<a href="../images/arc/img.png" target="_blank" rel="noopener">
   <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
 </a>
 <figcaption>A match taking place between two clients.</figcaption>
