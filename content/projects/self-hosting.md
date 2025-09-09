@@ -26,7 +26,7 @@ When I first got this server, I had a few goals and use-cases that I wanted to a
 All of these goals were fulfilled and then some! This thing has really come in handy over the years. I've used it to:
 - Host a git server when I had to do team projects at school (unnecessary, but still fun!)
 - Host my wedding website when I got married last year
-- Host the game server that I was [reverse-engineering recently](./reverse-engineered), and SQL DB
+- Host the game server that I was [reverse-engineering recently](./reverse-engineered), and an SQL DB for it to connect to
 - Host an Obsidian Sync server, to synchronize my notes across my phone and computer
 
 To deploy and maintain these services, I chose Docker at the time because I wanted to learn more about it. The idea of being able to spin up reproducible virtual machines, create separate virtual networks to isolate or connect services, mounting local directories to pass data into the container, all of that just sounded so cool and powerful. It felt like a pretty reliable way to manage applications, and a great solution for the services I wanted to host.
