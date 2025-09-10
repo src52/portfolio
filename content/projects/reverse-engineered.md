@@ -1,5 +1,5 @@
 ---
-title: Reverse-Engineered Java Game
+title: Reverse-Engineered Game
 image: ../images/arc/thumbs/arc2-thumb.jpg
 ---
 
