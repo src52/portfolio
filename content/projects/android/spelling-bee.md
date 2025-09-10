@@ -1,6 +1,7 @@
 ---
 title: Spelling Bee Game 
 image: ../images/thumbs/bee-thumb.jpg
+date: 2025-06-10
 ---
 
 - Built using Jetpack Compose, following Material Design 3 patterns

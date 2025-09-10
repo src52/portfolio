@@ -1,6 +1,7 @@
 ---
 title: "TaskRanger: To-do Lists"
 image: ../images/thumbs/newtask-thumb.jpg
+date: 2024-05-05
 ---
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Tasks are grouped in categories, or favorited to appear in starred area of tab bar
