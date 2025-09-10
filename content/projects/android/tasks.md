@@ -7,7 +7,7 @@ image: ../images/thumbs/newtask-thumb.jpg
 - Task and app state is saved to local SQLite DB using [Room](https://developer.android.com/training/data-storage/room)
 - Created two data sources to fetch task state: locally or remotely (from JSON)
 
-This project started with my desire for a modern, sleek task management application for Android. While plenty of these apps exist, none offer the deeper integration with the current task management system I use on my computers. On my laptop and desktop, I use this wonderful piece of open-source software called [Taskwarrior](https://taskwarrior.org/) to manage and synchronize my tasks. It's a very simple, terminal-based task manager, and its simplicity and ease-of-use is really where it shines for me. I run a Taskwarrior server that keeps these to-do lists in sync no matter which device I'm using.
+This project started with my desire for a modern, sleek task management application for Android. While plenty of these apps exist, none offer the deeper integration with the task management system I use on my computers. On my laptop and desktop, I use this wonderful piece of open-source software called [Taskwarrior](https://taskwarrior.org/) to manage and synchronize my tasks. It's a very simple, terminal-based task manager, and its simplicity and ease-of-use is really where it shines for me. I run a Taskwarrior server that keeps these to-do lists in sync no matter which device I'm using.
 
 My vision for this app is to create a modern and sleek task manager using the latest Material Design components, with support for the full Taskwarrior specification. While I haven't implemented the Taskwarrior aspect quite yet, that is on the roadmap!
 
