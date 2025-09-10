@@ -1,5 +1,5 @@
 ---
-title: Spelling Bee
+title: Spelling Bee Game 
 image: ../images/thumbs/bee-thumb.jpg
 ---
 
@@ -39,8 +39,8 @@ I wanted to learn more about serverless technologies like AWS Lambda at the time
  </style>
  <div class="image-gallery">
 <figure>
-<a href="../images/bee.jpg" target="_blank" rel="noopener">
-  <img src="../images/thumbs/bee-thumb.jpg" alt="The spelling bee game" loading="lazy" decoding="async">
+<a href="../../images/bee.jpg" target="_blank" rel="noopener">
+  <img src="../../images/thumbs/bee-thumb.jpg" alt="The spelling bee game" loading="lazy" decoding="async">
 </a>
 <figcaption>A user spelling the word 'pebble' from the available letters.</figcaption>
 </figure>

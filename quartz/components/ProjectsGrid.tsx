@@ -77,6 +77,8 @@ export default ((opts: Options = {}): QuartzComponent => {
   const indexSlug = `${folder}index`
   const defaultImage = opts.defaultImage ?? ""
 
+  console.log(`Index: ${indexSlug}`)
+
   function strFromFM(fm: QuartzPluginData["frontmatter"] | undefined, key: string): string | undefined {
     const v = (fm as Record<string, unknown> | undefined)?.[key]
     return typeof v === "string" && v.trim() ? v.trim() : undefined
@@ -90,7 +92,7 @@ export default ((opts: Options = {}): QuartzComponent => {
     const projects = pages
       .filter((p) => {
         const slug = p.slug ?? ""
-        return slug.startsWith(folder) && slug !== indexSlug
+        return slug.startsWith(folder) && slug !== indexSlug && !slug.endsWith("/index")
       })
       .map((p) => {
         const slug = p.slug ?? ""

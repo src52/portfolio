@@ -1,6 +1,5 @@
 ---
-navTitle: Task Management, Android
-title: Task Manager Android App
+title: "TaskRanger: To-do Lists"
 image: ../images/thumbs/newtask-thumb.jpg
 ---
 - Built using Jetpack Compose, following Material Design 3 patterns
