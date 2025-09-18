@@ -41,7 +41,7 @@ image: ../images/arc/thumbs/arc2-thumb.jpg
 <a href="../images/arc/img.png" target="_blank" rel="noopener">
   <img src="../images/arc/img.png" alt="" loading="lazy" decoding="async">
 </a>
-<figcaption>A match taking place between two clients.</figcaption>
+<figcaption>A match taking place between two players.</figcaption>
 </figure>
 <figure>
 <a href="../images/arc/img_2.png" target="_blank" rel="noopener">

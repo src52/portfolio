@@ -4,6 +4,8 @@ image: ../images/thumbs/bee-thumb.jpg
 date: 2025-06-10
 ---
 
+[View this project on GitHub!](https://github.com/src52/spelling_bee_android/tree/master)
+
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Wrote AWS Lambda functions to validate words against a dictionary
 
