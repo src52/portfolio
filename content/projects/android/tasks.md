@@ -3,6 +3,8 @@ title: "TaskRanger: To-do Lists"
 image: ../images/thumbs/newtask-thumb.jpg
 date: 2024-05-05
 ---
+[View this project on GitHub!](https://github.com/src52/taskranger)
+
 - Built using Jetpack Compose, following Material Design 3 patterns
 - Tasks are grouped in categories, or favorited to appear in starred area of tab bar
 - Task and app state is saved to local SQLite DB using [Room](https://developer.android.com/training/data-storage/room)
